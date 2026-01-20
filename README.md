@@ -17,21 +17,17 @@ The data flows from a transactional system (OLTP) to a staging area, undergoes t
 
 ```mermaid
 flowchart LR
-    A[("OLTP Database
-    (MySQL)")] -->|Extract & Load
-    Last 4 Hours Data| B(Staging Area)
-    B -->|Transform| C{ETL Script
-    (Bash/Shell)}
-    C -->|Load| D[("Data Warehouse
-    (PostgreSQL)")]
-    D -->|Reporting| E[Cognos Analytics]
+    A[("OLTP Database<br>(MySQL)")] -->|Extract & Load<br>Last 4 Hours Data| B("Staging Area")
+    B -->|Transform| C{"ETL Script<br>(Bash/Shell)"}
+    C -->|Load| D[("Data Warehouse<br>(PostgreSQL)")]
+    D -->|Reporting| E["Cognos Analytics"]
     
     subgraph "Data Warehouse Schema"
-    D1[FactSales]
-    D2[DimDate]
-    D3[DimCategory]
-    D4[DimCountry]
-    D5[DimItem]
+    D1["FactSales"]
+    D2["DimDate"]
+    D3["DimCategory"]
+    D4["DimCountry"]
+    D5["DimItem"]
     end
 
 ```
@@ -119,7 +115,7 @@ The ETL pipeline is automated using a Shell script (`ETL.sh`) that performs the 
 
 ## 👤 Author
 
-(**Bagas Wahyu Herdiansyah**)[https://www.linkedin.com/in/bagas-wahyu-herdiansyah/]
+[**Bagas Wahyu Herdiansyah**](https://www.linkedin.com/in/bagas-wahyu-herdiansyah/)
 
 ---
 
