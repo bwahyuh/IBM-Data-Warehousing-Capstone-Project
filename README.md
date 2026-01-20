@@ -117,6 +117,10 @@ The ETL pipeline is automated using a Shell script (`ETL.sh`) that performs the 
 
 [**Bagas Wahyu Herdiansyah**](https://www.linkedin.com/in/bagas-wahyu-herdiansyah/)
 
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ---
 
 *This project is part of the IBM Data Engineering Professional Certificate.*
